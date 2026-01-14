@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliance Touch - Professional Electrical & Appliance Services in Sydney</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <div class="logo-graphic">
+                        <span class="logo-a">A</span>
+                        <span class="logo-t">T</span>
+                        <span class="logo-zap">⚡</span>
+                    </div>
+                    <span class="logo-text">
+                        <span class="logo-appliance">APPLIANCE</span>
+                        <span class="logo-touch">TOUCH</span>
+                    </span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#areas" class="nav-link">Service Areas</a></li>
+                    <li><a href="#book" class="nav-link">Book Now</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background" style="background-image: url('images/sydney view.png')"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Professional Electrical & Appliance Services</h1>
+                <p class="hero-subtitle">Serving Sydney and Surrounding Suburbs - Licensed, Insured & Reliable</p>
+                <div class="hero-buttons">
+                    <a href="#book" class="btn btn-primary">Book a Service</a>
+                    <a href="tel:+61494313141" class="btn btn-secondary">Call Now</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Licensed & Insured</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Same-Day Service Available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive electrical and appliance solutions for your home and business</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="images/Light.png" alt="LED Downlight Installation" class="service-image">
+                    <div class="service-icon">🔌</div>
+                    <h3 class="service-title">Electrical Installation</h3>
+                    <p class="service-description">Professional installation of electrical systems, outlets, switches, lighting, and panels. All work meets Australian safety standards.</p>
+                    <ul class="service-list">
+                        <li>LED Downlight Installation</li>
+                        <li>Lighting Installation & Upgrades</li>
+                        <li>Electrical Panel Upgrades</li>
+                        <li>Wiring & Rewiring</li>
+                        <li>Ceiling Fan Installation</li>
+                    </ul>
+                    <button class="btn btn-service" data-service="Electrical Installation" data-service-type="electrical-installation">Request This Service</button>
+                </div>
+                <div class="service-card">
+                    <img src="images/Electrician 2.png" alt="Electrical Repair" class="service-image">
+                    <div class="service-icon">🔧</div>
+                    <h3 class="service-title">Electrical Repair</h3>
+                    <p class="service-description">Fast and reliable repair services for all your electrical issues. We diagnose and fix problems quickly and safely.</p>
+                    <ul class="service-list">
+                        <li>Circuit Breaker Repair</li>
+                        <li>Faulty Outlet & Switch Repair</li>
+                        <li>Lighting Issues & Fixes</li>
+                        <li>Electrical Troubleshooting</li>
+                        <li>Power Point Repairs</li>
+                    </ul>
+                    <button class="btn btn-service" data-service="Electrical Repair" data-service-type="electrical-repair">Request This Service</button>
+                </div>
+                <div class="service-card">
+                    <img src="images/kitchen.png" alt="Oven & Cooktop Installation" class="service-image">
+                    <div class="service-icon">🏠</div>
+                    <h3 class="service-title">Appliance Installation</h3>
+                    <p class="service-description">Expert installation of all major appliances. We ensure proper setup, connection, and safety compliance.</p>
+                    <ul class="service-list">
+                        <li>Dishwasher Installation</li>
+                        <li>Oven & Cooktop Installation</li>
+                        <li>Range Hood Installation</li>
+                        <li>Washing Machine & Dryer Setup</li>
+                    </ul>
+                    <button class="btn btn-service" data-service="Appliance Installation" data-service-type="appliance-installation">Request This Service</button>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&h=400&fit=crop&q=80" alt="Oven & Cooktop Repair" class="service-image">
+                    <div class="service-icon">⚙️</div>
+                    <h3 class="service-title">Appliance Repair</h3>
+                    <p class="service-description">Professional repair services for all major appliances. We fix it right the first time, saving you time and money.</p>
+                    <ul class="service-list">
+                        <li>Washing Machine & Dryer Service</li>
+                        <li>Dishwasher Repair</li>
+                        <li>Oven & Cooktop Repair</li>
+                        <li>Microwave & Small Appliance Repair</li>
+                    </ul>
+                    <button class="btn btn-service" data-service="Appliance Repair" data-service-type="appliance-repair">Request This Service</button>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&h=400&fit=crop&q=80" alt="Emergency Electrical Services" class="service-image">
+                    <div class="service-icon">⚡</div>
+                    <h3 class="service-title">Emergency Services</h3>
+                    <p class="service-description">Available for electrical emergencies. Your safety is our priority, and we respond quickly to urgent situations.</p>
+                    <ul class="service-list">
+                        <li>Power Outages</li>
+                        <li>Electrical Hazards</li>
+                        <li>Spark & Smoke Issues</li>
+                        <li>Urgent Repairs</li>
+                        <li>24/7 Emergency Response</li>
+                    </ul>
+                    <button class="btn btn-service" data-service="Emergency Services" data-service-type="emergency">Request This Service</button>
+                </div>
+                <div class="service-card">
+                    <img src="images/Smart home solution.png" alt="Smart Home Solutions" class="service-image">
+                    <div class="service-icon">💡</div>
+                    <h3 class="service-title">Smart Home Solutions</h3>
+                    <p class="service-description">Upgrade your home with smart lighting, thermostats, and automation systems. Modern technology for modern living.</p>
+                    <ul class="service-list">
+                        <li>Smart Lighting Systems</li>
+                        <li>Smart Thermostats</li>
+                        <li>Home Automation</li>
+                        <li>Security System Installation</li>
+                        <li>Smart Switch Installation</li>
+                    </ul>
+                    <button class="btn btn-service" data-service="Smart Home Solutions" data-service-type="smart-home">Request This Service</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Appliance Touch</h2>
+                    <p class="about-description">
+                        Appliance Touch is a trusted, family-owned electrical and appliance service company serving Sydney and surrounding suburbs. With over 8 years of experience in the industry, we have built a reputation for excellence, reliability, and outstanding customer service.
+                    </p>
+                    <p class="about-description">
+                        Our team of licensed electricians and certified appliance technicians are committed to providing high-quality workmanship at competitive prices. We understand that electrical and appliance issues can be stressful, which is why we prioritize clear communication, punctuality, and getting the job done right the first time.
+                    </p>
+                    <p class="about-description">
+                        Whether you need a simple repair, a complete installation, or emergency service, Appliance Touch is here to help. We take pride in our work and stand behind every service we provide with our satisfaction guarantee.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3000+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Emergency Service</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                    <div class="about-certifications">
+                        <h3>Our Credentials</h3>
+                        <ul>
+                            <li>✓ Fully Licensed Electricians (NSW Fair Trading)</li>
+                            <li>✓ Public Liability Insurance</li>
+                            <li>✓ Australian Standards Compliant</li>
+                            <li>✓ Police Checked & Verified Technicians</li>
+                            <li>✓ Environmentally Conscious Practices</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/van.png" alt="Appliance Touch Tradie Van">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section id="areas" class="service-areas">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Service Areas</h2>
+                <p class="section-subtitle">We proudly serve Sydney and surrounding suburbs</p>
+            </div>
+            <div class="areas-content">
+                <div class="areas-intro">
+                    <p>Appliance Touch provides professional electrical and appliance services throughout the Greater Sydney region. Our service area includes:</p>
+                </div>
+                <div class="areas-grid">
+                    <div class="area-category">
+                        <h3>Inner Sydney</h3>
+                    </div>
+                    <div class="area-category">
+                        <h3>Eastern Suburbs</h3>
+                    </div>
+                    <div class="area-category">
+                        <h3>Inner West</h3>
+                    </div>
+                    <div class="area-category">
+                        <h3>South Sydney</h3>
+                    </div>
+                    <div class="area-category">
+                        <h3>North Shore</h3>
+                    </div>
+                    <div class="area-category">
+                        <h3>Northern Beaches</h3>
+                    </div>
+                    <div class="area-category">
+                        <h3>Western Suburbs</h3>
+                    </div>
+                    <div class="area-category">
+                        <h3>South West</h3>
+                    </div>
+                </div>
+                <div class="areas-note">
+                    <p><strong>Don't see your suburb listed?</strong> We may still service your area! Contact us to confirm availability and discuss your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Work in Action</h2>
+                <p class="section-subtitle">See our professional technicians at work fixing and installing electrical systems and appliances</p>
+            </div>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="images/Light.png" alt="LED Downlight">
+                    <div class="gallery-overlay">
+                        <h4>LED Downlight Installation</h4>
+                        <p>Professional modern downlight installation</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Fan.png" alt="Ceiling Fan">
+                    <div class="gallery-overlay">
+                        <h4>Ceiling Fan Installation</h4>
+                        <p>Modern ceiling fan installation & repair</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/kitchen.png" alt="Oven & Cooktop Installation">
+                    <div class="gallery-overlay">
+                        <h4>Oven & Cooktop Installation</h4>
+                        <p>Professional kitchen appliance installation</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/oven.png" alt="Oven & Cooktop Repair">
+                    <div class="gallery-overlay">
+                        <h4>Oven & Cooktop Repair</h4>
+                        <p>Expert appliance repair services</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_8463.JPG" alt="Distribution Box">
+                    <div class="gallery-overlay">
+                        <h4>Distribution Box Repair</h4>
+                        <p>Expert electrical panel troubleshooting and repair</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Laundry.png" alt="Laundry Appliances">
+                    <div class="gallery-overlay">
+                        <h4>Laundry Appliances</h4>
+                        <p>Professional laundry appliance installation & repair</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book" class="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Book Your Service</h2>
+                <p class="section-subtitle">Schedule an appointment for electrical or appliance services</p>
+            </div>
+            <div class="booking-content">
+                <div class="booking-info">
+                    <h3>Why Choose Appliance Touch?</h3>
+                    <ul class="booking-features">
+                        <li>✓ Same-day service available</li>
+                        <li>✓ Upfront pricing - no hidden fees</li>
+                        <li>✓ Licensed and insured professionals</li>
+                        <li>✓ 12-month warranty on all work</li>
+                        <li>✓ Free quotes for major projects</li>
+                        <li>✓ Emergency service available</li>
+                    </ul>
+                    <div class="booking-contact">
+                        <h3>Prefer to Call?</h3>
+                        <p><strong>Phone:</strong> <a href="tel:+61494313141">0494 313 141</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:Service@appliancetouch.com.au">Service@appliancetouch.com.au</a></p>
+                        <p><strong>Hours:</strong> Mon-Fri 9am-5pm, Sat 9am-5pm</p>
+                    </div>
+                </div>
+                <form class="booking-form" id="bookingForm">
+                    <h3>Service Request Form</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="04XX XXX XXX">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="suburb">Suburb *</label>
+                            <input type="text" id="suburb" name="suburb" required placeholder="e.g., Bondi, Newtown">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Street Address *</label>
+                        <input type="text" id="address" name="address" required placeholder="123 Main Street">
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceType">Service Type *</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Select a service...</option>
+                            <option value="electrical-installation">Electrical Installation</option>
+                            <option value="electrical-repair">Electrical Repair</option>
+                            <option value="appliance-installation">Appliance Installation</option>
+                            <option value="appliance-repair">Appliance Repair</option>
+                            <option value="emergency">Emergency Service</option>
+                            <option value="smart-home">Smart Home Solutions</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="applianceType">Appliance/Equipment Type (if applicable)</label>
+                        <input type="text" id="applianceType" name="applianceType" placeholder="e.g., Dishwasher, Oven, Washing Machine">
+                    </div>
+                    <div class="form-group">
+                        <label for="preferredDate">Preferred Date *</label>
+                        <input type="date" id="preferredDate" name="preferredDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferredTime">Preferred Time *</label>
+                        <select id="preferredTime" name="preferredTime" required>
+                            <option value="">Select a time...</option>
+                            <option value="morning">Morning (7am - 12pm)</option>
+                            <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                            <option value="evening">Evening (5pm - 7pm)</option>
+                            <option value="flexible">Flexible</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="urgency">Urgency Level</label>
+                        <select id="urgency" name="urgency">
+                            <option value="normal">Normal (Within 2-3 days)</option>
+                            <option value="urgent">Urgent (Same day preferred)</option>
+                            <option value="emergency">Emergency (As soon as possible)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Job Description *</label>
+                        <textarea id="description" name="description" rows="5" required placeholder="Please describe the issue or service needed in detail..."></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="consent" required>
+                            <span>I agree to be contacted by Appliance Touch regarding this service request *</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit Booking Request</button>
+                    <p class="form-note">We'll contact you within 2 hours to confirm your booking and provide a quote.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">We Service Major Brands</h2>
+            </div>
+            <div class="brands-wrapper">
+                <div class="brands-track">
+                    <div class="brand-item">
+                        <span class="brand-name">Fisher & Paykel</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Miele</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Bosch</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Smeg</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Westinghouse</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Electrolux</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">LG</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Samsung</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Haier</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Beko</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">AEG</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Asko</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Ilve</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Simpson</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Hoover</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Qasair</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Whirlpool</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">KitchenAid</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Chef</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Euromaid</span>
+                    </div>
+                    <!-- Duplicate for seamless loop -->
+                    <div class="brand-item">
+                        <span class="brand-name">Fisher & Paykel</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Miele</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Bosch</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Smeg</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Westinghouse</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Electrolux</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">LG</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Samsung</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Haier</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Beko</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">AEG</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Asko</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Ilve</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Simpson</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Hoover</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Qasair</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Whirlpool</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">KitchenAid</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Chef</span>
+                    </div>
+                    <div class="brand-item">
+                        <span class="brand-name">Euromaid</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-graphic logo-graphic-small">
+                            <span class="logo-a">A</span>
+                            <span class="logo-t">T</span>
+                            <span class="logo-zap">⚡</span>
+                        </div>
+                        <span class="logo-text">
+                            <span class="logo-appliance">APPLIANCE</span>
+                            <span class="logo-touch">TOUCH</span>
+                        </span>
+                    </div>
+                    <p>Your trusted partner for all electrical and appliance needs in Sydney. Licensed, insured, and committed to excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#areas">Service Areas</a></li>
+                        <li><a href="#book">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Electrical Installation</a></li>
+                        <li><a href="#services">Electrical Repair</a></li>
+                        <li><a href="#services">Appliance Installation</a></li>
+                        <li><a href="#services">Appliance Repair</a></li>
+                        <li><a href="#services">Emergency Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>📞 <a href="tel:+61494313141">0494 313 141</a></li>
+                        <li>✉️ <a href="mailto:Service@appliancetouch.com.au">Service@appliancetouch.com.au</a></li>
+                        <li>📍 Serving Sydney & Surrounding Suburbs</li>
+                        <li>🕒 Mon-Fri: 9am-5pm | Sat: 9am-5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Appliance Touch. All rights reserved. | Licensed Electricians NSW | ABN: 61 664 090 463</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

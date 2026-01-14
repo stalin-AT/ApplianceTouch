@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Service - Appliance Touch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 12px;">
+                        <div class="logo-graphic">
+                            <span class="logo-a">A</span>
+                            <span class="logo-t">T</span>
+                            <span class="logo-zap">⚡</span>
+                        </div>
+                        <span class="logo-text">
+                            <span class="logo-appliance">APPLIANCE</span>
+                            <span class="logo-touch">TOUCH</span>
+                        </span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#areas" class="nav-link">Service Areas</a></li>
+                    <li><a href="index.html#book" class="nav-link">Book Now</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Section -->
+    <section class="booking" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Request a Service</h2>
+                <p class="section-subtitle">Fill out the form below and we'll get back to you within 2 hours</p>
+            </div>
+            <div class="booking-content" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+                <form class="booking-form" id="bookingForm">
+                    <h3>Service Request Form</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="04XX XXX XXX">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="suburb">Suburb *</label>
+                            <input type="text" id="suburb" name="suburb" required placeholder="e.g., Bondi, Newtown">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Street Address *</label>
+                        <input type="text" id="address" name="address" required placeholder="123 Main Street">
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceType">Service Type *</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">Select a service...</option>
+                            <option value="electrical-installation">Electrical Installation</option>
+                            <option value="electrical-repair">Electrical Repair</option>
+                            <option value="appliance-installation">Appliance Installation</option>
+                            <option value="appliance-repair">Appliance Repair</option>
+                            <option value="emergency">Emergency Service</option>
+                            <option value="smart-home">Smart Home Solutions</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="applianceType">Appliance/Equipment Type (if applicable)</label>
+                        <input type="text" id="applianceType" name="applianceType" placeholder="e.g., Dishwasher, Oven, Washing Machine">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredDate">Preferred Date *</label>
+                            <input type="date" id="preferredDate" name="preferredDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferredTime">Preferred Time *</label>
+                            <select id="preferredTime" name="preferredTime" required>
+                                <option value="">Select a time...</option>
+                                <option value="morning">Morning (7am - 12pm)</option>
+                                <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                                <option value="evening">Evening (5pm - 7pm)</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="urgency">Urgency Level</label>
+                        <select id="urgency" name="urgency">
+                            <option value="normal">Normal (Within 2-3 days)</option>
+                            <option value="urgent">Urgent (Same day preferred)</option>
+                            <option value="emergency">Emergency (As soon as possible)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Job Description *</label>
+                        <textarea id="description" name="description" rows="5" required placeholder="Please describe the issue or service needed in detail..."></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="consent" required>
+                            <span>I agree to be contacted by Appliance Touch regarding this service request *</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit Service Request</button>
+                    <p class="form-note">We'll contact you within 2 hours to confirm your booking and provide a quote.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-graphic logo-graphic-small">
+                            <span class="logo-a">A</span>
+                            <span class="logo-t">T</span>
+                            <span class="logo-zap">⚡</span>
+                        </div>
+                        <span class="logo-text">
+                            <span class="logo-appliance">APPLIANCE</span>
+                            <span class="logo-touch">TOUCH</span>
+                        </span>
+                    </div>
+                    <p>Your trusted partner for all electrical and appliance needs in Sydney. Licensed, insured, and committed to excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#areas">Service Areas</a></li>
+                        <li><a href="index.html#book">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Electrical Installation</a></li>
+                        <li><a href="index.html#services">Electrical Repair</a></li>
+                        <li><a href="index.html#services">Appliance Installation</a></li>
+                        <li><a href="index.html#services">Appliance Repair</a></li>
+                        <li><a href="index.html#services">Emergency Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>📞 <a href="tel:+61494313141">0494 313 141</a></li>
+                        <li>✉️ <a href="mailto:Service@appliancetouch.com.au">Service@appliancetouch.com.au</a></li>
+                        <li>📍 Serving Sydney & Surrounding Suburbs</li>
+                        <li>🕒 Mon-Fri: 9am-5pm | Sat: 9am-5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Appliance Touch. All rights reserved. | Licensed Electricians NSW | ABN: 61 664 090 463</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>
